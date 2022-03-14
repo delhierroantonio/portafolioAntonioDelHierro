@@ -1,1 +1,0 @@
-Buenas tardes Maria agregue un poco de animaciones y transiciones al navbar de todos los html y al boton principal del hero y iconos sociales en index.html
