@@ -30,6 +30,7 @@
 /* globals */
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 img {
@@ -92,7 +93,8 @@ footer.index {
     align-items: center;
 }
 
-.nav__logo img {
+/* -------------------------------------------------------------bootstrap styles start*/
+.nav__logo {
     width: 15rem;
     filter: invert(90%);
 }
@@ -104,13 +106,38 @@ footer.index {
 }
 
 
-li.nav__item {
+a.nav-link {
     font-size: 1.6rem;
     color: var(--white);
     border-bottom: 2px solid transparent;
     transition: all 300ms ease-in-out;
 
 }
+
+@media(max-width: 991px) {
+    .nav-item {
+        background-color: #212529;
+        padding: 1em;
+    }
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 4em;
+}
+
+main.portfolio {
+    height: 100%;
+}
+
+.portfolio__container {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------------------------------------------bootstrap styles ends*/
 
 /* hero */
 
