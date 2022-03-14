@@ -107,6 +107,9 @@ footer.index {
 li.nav__item {
     font-size: 1.6rem;
     color: var(--white);
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease-in-out;
+
 }
 
 /* hero */
@@ -553,4 +556,31 @@ input.contact__btn:hover {
         padding: 0 1em 1em 1em;
     }
 
+}
+
+/* -------------------------------------------------------------animation transitions desafio */
+li.nav__item:hover {
+    border-bottom: 2px solid var(--white);
+    transform: translate(0px, -5px);
+}
+
+li.nav__item.active {
+    border-bottom: 2px solid var(--white);
+}
+
+.hero__btn__container {
+    transition: all 300ms ease-in-out;
+}
+
+.hero__btn__container a:hover {
+    box-shadow: inset 0 0 0 25px var(--black);
+    border-radius: .5em;
+}
+
+.socials a {
+    transition: all 300ms ease-in-out;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
 }
