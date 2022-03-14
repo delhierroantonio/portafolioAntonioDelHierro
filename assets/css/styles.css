@@ -137,6 +137,14 @@ main.portfolio {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: var(--white);
+}
+
 /* -------------------------------------------------------------bootstrap styles ends*/
 
 /* hero */
