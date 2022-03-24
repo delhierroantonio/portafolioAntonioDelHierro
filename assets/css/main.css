@@ -108,7 +108,7 @@ a.nav-link {
   a.nav-link:hover {
     border-bottom: 2px solid #f8f9fa; }
   a.nav-link.active {
-    border-bottom: 2px solid #f8f9fa; }
+    border-bottom: 2px solid #e63946; }
 
 /* hero */
 main.index {
