@@ -1,0 +1,11 @@
+// variables
+@import './misc/variables';
+// globales
+@import './misc/normalize';
+// partials
+@import './partials/header';
+@import './partials/footer';
+// views
+@import './views/home';
+// media queries
+@import './misc/mixins'

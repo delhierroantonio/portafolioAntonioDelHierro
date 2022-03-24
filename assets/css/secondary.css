@@ -105,8 +105,8 @@ main.index {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/images/mainFrame\ 2.png);
     background-position: center center;
+    background-image: url(../assets/images/project.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -707,3 +707,14 @@ a {
     margin-bottom: 2em;
     line-height: 1.8;
 }
+
+/* // variables
+@import url(misc/variables);
+// globales
+@import url(misc/_normalize.scss);
+@import url(misc/_mixins.scss);
+// partials
+@import url(partials/_header.scss);
+@import url(partials/_footer.scss);
+// views
+@import url(views/_home.scss); */

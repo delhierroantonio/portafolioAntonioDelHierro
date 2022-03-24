@@ -1,0 +1,28 @@
+{
+  "name": "portafolio_antoniodelhierro_clase8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss assets/css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delhierroantonio/portafolioAntonioDelHierro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delhierroantonio/portafolioAntonioDelHierro/issues"
+  },
+  "homepage": "https://github.com/delhierroantonio/portafolioAntonioDelHierro#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,24 @@
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    height: 100%;
+    padding: 0 1.5em;
+
+    &.index {
+        height: 10vh;
+    }
+
+    &__logo img {
+        width: 15rem;
+        filter: invert(100%);
+    }
+
+    &__copy {
+        font-size: $sm;
+        color: $white;
+    }
+}

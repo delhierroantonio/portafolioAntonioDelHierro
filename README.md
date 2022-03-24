@@ -1,3 +1,2 @@
-# portafolioAntonioDelHierro
-## Desafio 10 de Coder House
+# desfio clase 10 
 ## ver [Live Demo] (https://delhierroantonio.github.io/portafolioAntonioDelHierro/) del sitio. 
