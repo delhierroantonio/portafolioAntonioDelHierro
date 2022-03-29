@@ -22,12 +22,12 @@ img {
 }
 
 h1 {
-    font-family: $title;
+    font-family: map-get($fonts, "title");
 }
 
 p,
 a {
-    font-family: $text;
+    font-family: map-get($fonts, "text");
 }
 
 a {

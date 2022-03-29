@@ -15,17 +15,17 @@ body {
 
 header.index {
     grid-area: head;
-    background-color: $black;
+    background-color: map-get($colores, "black");
 }
 
 main.index {
     grid-area: main;
-    background-color: $black;
+    background-color: map-get($colores, "black");
 }
 
 aside.index {
     grid-area: side;
-    background-color: $white;
+    background-color: map-get($colores, "white");
 }
 
 footer.index {
@@ -34,7 +34,7 @@ footer.index {
 
 /* navBar */
 header a {
-    color: $white;
+    color: map-get($colores, "white");
 }
 
 .nav {
@@ -42,9 +42,7 @@ header a {
     padding: 2em;
 
     &__logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, row, center, center);
         width: 15rem;
         filter: invert(90%);
     }
@@ -58,19 +56,20 @@ header a {
 }
 
 a.nav-link {
-    font-size: $sm;
-    color: $white;
+    font-size: map-get($sizes, "sm");
+    color: map-get($colores, "white");
     border-bottom: 2px solid transparent;
     transition: all 300ms ease-in-out;
     border-bottom: 2px solid transparent;
     margin-right: 1em;
 
     &:hover {
-        border-bottom: 2px solid $white;
+        border-bottom: 2px solid map-get($colores, "white");
     }
 
     &.active {
-        border-bottom: 2px solid #e63946;
+        @extend a.nav-link;
+        border-bottom: 2px solid map-get($colores, "white");
     }
 }
 
@@ -83,9 +82,7 @@ main {
 
 .hero {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, row, center, center);
     background-position: center center;
     background-image: url(../../assets/images/project.jpg);
     background-size: cover;
@@ -93,10 +90,7 @@ main {
 
     &__content {
         height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, column, center, center);
         background-color: rgba(95, 95, 95, 0.390);
         border-radius: .425rem;
         padding: 2rem;
@@ -105,24 +99,24 @@ main {
 
     &__title {
         text-align: center;
-        font-size: $xl;
-        color: $white;
+        font-size: map-get($sizes, "xl");
+        color: map-get($colores, "white");
         margin-bottom: 1em;
     }
 
     &__text {
         text-align: center;
-        font-size: $lg;
-        color: $white;
+        font-size: map-get($sizes, "lg");
+        color: map-get($colores, "white");
         margin-bottom: 1em;
     }
 
     &__btn {
         text-decoration: none;
-        font-size: $sm;
+        font-size: map-get($sizes, "sm");
         font-weight: 600;
-        color: $black;
-        background-color: $white;
+        color: map-get($colores, "black");
+        background-color: map-get($colores, "white");
         padding: 1em 2.4em;
         border-radius: .5rem;
         transition: all .3s ease-in-out;
@@ -134,10 +128,10 @@ main {
         transition: all 300ms ease-in-out;
 
         & a:hover {
-            box-shadow: inset 0 0 0 25px $black;
+            box-shadow: inset 0 0 0 25px map-get($colores, "black");
             border-radius: .5em;
-            color: $white;
-            background-color: $black;
+            color: map-get($colores, "white");
+            background-color: map-get($colores, "black");
         }
     }
 }
@@ -176,10 +170,8 @@ footer {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $black;
+    @include flex(flex, row, space-between, center);
+    background-color: map-get($colores, "black");
     height: 100%;
     padding: 0 1.5em;
 
@@ -189,7 +181,7 @@ footer {
     }
 
     &__copy {
-        font-size: $sm;
-        color: $white;
+        font-size: map-get($sizes, "sm");
+        color: map-get($colores, "white");
     }
 }

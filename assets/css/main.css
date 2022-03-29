@@ -1,7 +1,4 @@
-/* variabless */
-/* colors */
-/* fonts */
-/* sizes */
+/* variables */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@300;500&display=swap");
 /* my reset */
 *,
@@ -22,11 +19,11 @@ img {
   max-width: 100%; }
 
 h1 {
-  font-family: "Poppins", sans-serif; }
+  font-family: Poppins; }
 
 p,
 a {
-  font-family: "Raleway", sans-serif; }
+  font-family: Raleway; }
 
 a {
   text-decoration: none; }
@@ -89,6 +86,7 @@ header a {
   padding: 2em; }
   .nav__logo {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 15rem;
@@ -98,7 +96,7 @@ header a {
   position: absolute;
   right: 4em; }
 
-a.nav-link {
+a.nav-link, a.nav-link.active {
   font-size: 1.8rem;
   color: #f8f9fa;
   border-bottom: 2px solid transparent;
@@ -107,8 +105,8 @@ a.nav-link {
   margin-right: 1em; }
   a.nav-link:hover {
     border-bottom: 2px solid #f8f9fa; }
-  a.nav-link.active {
-    border-bottom: 2px solid #e63946; }
+  a.active.nav-link {
+    border-bottom: 2px solid #f8f9fa; }
 
 /* hero */
 main.index {
@@ -117,6 +115,7 @@ main.index {
 .hero {
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-position: center center;
@@ -185,6 +184,7 @@ footer.index {
 
 .footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #212529;

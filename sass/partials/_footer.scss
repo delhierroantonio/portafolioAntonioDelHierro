@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $black;
+    background-color: map-get($colores, "black");
     height: 100%;
     padding: 0 1.5em;
 
@@ -18,7 +18,7 @@
     }
 
     &__copy {
-        font-size: $sm;
-        color: $white;
+        font-size: map-get($sizes, "sm");
+        color: map-get($colores, "white");
     }
 }
