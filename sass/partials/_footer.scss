@@ -1,4 +1,9 @@
 /* footer */
+footer {
+    &.index {
+        height: 10vh;
+    }
+}
 
 .footer {
     display: flex;
@@ -7,10 +12,6 @@
     background-color: map-get($colores, "black");
     height: 100%;
     padding: 0 1.5em;
-
-    &.index {
-        height: 10vh;
-    }
 
     &__logo img {
         width: 15rem;

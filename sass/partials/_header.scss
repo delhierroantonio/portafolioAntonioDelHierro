@@ -1,4 +1,8 @@
 /* header */
+header a {
+    color: map-get($colores, "white");
+}
+
 .nav {
     height: 100%;
     padding: 2em;

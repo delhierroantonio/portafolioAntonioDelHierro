@@ -29,6 +29,9 @@ a {
   text-decoration: none; }
 
 /* header */
+header a {
+  color: #f8f9fa; }
+
 .nav {
   height: 100%;
   padding: 2em; }
@@ -38,6 +41,9 @@ a {
     align-items: center; }
 
 /* footer */
+footer.index {
+  height: 10vh; }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -45,8 +51,6 @@ a {
   background-color: #212529;
   height: 100%;
   padding: 0 1.5em; }
-  .footer.index {
-    height: 10vh; }
   .footer__logo img {
     width: 15rem;
     filter: invert(100%); }
@@ -78,9 +82,6 @@ footer.index {
   grid-area: foot; }
 
 /* navBar */
-header a {
-  color: #f8f9fa; }
-
 .nav {
   height: 100%;
   padding: 2em; }
@@ -101,7 +102,6 @@ a.nav-link, a.nav-link.active {
   color: #f8f9fa;
   border-bottom: 2px solid transparent;
   transition: all 300ms ease-in-out;
-  border-bottom: 2px solid transparent;
   margin-right: 1em; }
   a.nav-link:hover {
     border-bottom: 2px solid #f8f9fa; }
@@ -119,7 +119,7 @@ main.index {
   justify-content: center;
   align-items: center;
   background-position: center center;
-  background-image: url(../../assets/images/project.jpg);
+  background-image: url(../../assets/images/mainFrame2.png);
   background-size: cover;
   background-repeat: no-repeat; }
   .hero__content {
@@ -178,24 +178,238 @@ main.index {
     .socials a:hover {
       transform: scale(1.2); }
 
-/* footer */
-footer.index {
-  height: 10vh; }
+/* ----------------------------------------------------------------------sin sass youtube------------------------------------------------------------ */
+/* main */
+main.youtube {
+  height: 100vh; }
 
-.footer {
+.youtube__container {
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  gap: 1em;
+  flex-direction: column;
+  padding: 2em 1em; }
+
+.youtube__title {
+  text-align: center;
+  font-family: var(--title);
+  font-weight: 600;
+  font-size: var(--xl);
+  color: var(--black); }
+
+.youtube__text {
+  text-align: center;
+  font-family: var(--text);
+  font-size: var(--md);
+  letter-spacing: .5rem; }
+
+.youtube__frame {
+  width: 100%;
+  height: 100%; }
+
+.youtube__btn {
+  display: block;
+  margin: 0 auto;
+  font-size: var(--sm);
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 1rem;
+  padding: .5em 1em;
+  transition: all .3s ease-in-out; }
+
+.youtube__btn:hover {
+  color: var(--white);
+  background-color: var(--black); }
+
+/* -----------------------------------------------------------------------sin sass about------------------------------------------------------------- */
+/* main */
+main.about {
+  height: 100vh; }
+
+.about {
+  height: 100%;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin: 2em; }
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.about__image {
+  display: none; }
+
+.about__image img {
+  width: 100%;
+  aspect-ratio: 1 / 2; }
+
+.about__title {
+  font-size: var(--lg);
+  color: var(--black);
+  letter-spacing: .6rem;
+  padding: 1em 0; }
+
+.about__text {
+  text-align: center;
+  font-size: var(--md);
+  font-weight: 300;
+  color: var(--black);
+  padding: 0 1em 1em 1em; }
+
+/* ---------------------------------------------------------------------sin sass portfolio----------------------------------------------------------- */
+/* main */
+main.portfolio {
+  height: 100%; }
+
+.portfolio__mainContainer {
+  height: 100%;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #212529;
-  height: 100%;
-  padding: 0 1.5em; }
-  .footer__logo img {
-    width: 15rem;
-    filter: invert(100%); }
-  .footer__copy {
-    font-size: 1.8rem;
-    color: #f8f9fa; }
+  padding: 2em 0; }
+
+.porfolio__title {
+  font-size: var(--lg);
+  color: var(--black); }
+
+.portfolio__type {
+  text-align: center;
+  font-size: var(--md);
+  font-weight: 600;
+  color: var(--black);
+  padding: 1em 0; }
+
+.portfolio__subContainer {
+  width: 90%;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 1em; }
+
+@media (min-width: 768px) {
+  .portfolio__subContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; } }
+
+.portfolio__container img {
+  cursor: pointer;
+  border-radius: .4rem;
+  margin: .5em;
+  transition: all .3s ease-in-out; }
+
+.portfolio__container img:hover {
+  transform: scale(1.01);
+  filter: blur(1px); }
+
+.portfolio__btn {
+  font-size: var(--sm);
+  font-family: var(--text);
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 1rem;
+  padding: .6em 2em;
+  transition: all .3s ease-in-out; }
+
+.portfolio__btn:hover {
+  color: var(--white);
+  background-color: var(--black); }
+
+/* ----------------------------------------------------------------------sin sass contact------------------------------------------------------------ */
+.contact__title {
+  font-size: var(--lg);
+  text-align: center;
+  padding-top: 1em; }
+
+main.contact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em; }
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min-max(25rem, 1fr));
+  gap: 1em; }
+
+.wrapper .box {
+  width: 100%;
+  position: relative;
+  padding: 2em; }
+
+.wrapper .box input {
+  width: 100%;
+  font-size: var(--sm);
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--black);
+  transition: all .3s ease-in-out; }
+
+.wrapper .box input:focus {
+  padding: .6em .3em;
+  background-color: whitesmoke; }
+
+.wrapper .box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--black);
+  font-size: var(--sm);
+  padding: .5em;
+  transition: all .3s ease-in-out; }
+
+.wrapper .box input:focus ~ label {
+  padding: 0; }
+
+#message {
+  width: 100%;
+  font-size: var(--sm);
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--black);
+  transition: all .3s ease-in-out; }
+
+.messageLabel {
+  position: relative;
+  top: -2em;
+  left: -.5em;
+  color: var(--black);
+  font-size: var(--sm);
+  padding: .5em;
+  transition: all .3s ease-in-out; }
+
+input.contact__btn {
+  font-family: var(--text);
+  font-size: var(--sm);
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: .2em;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  transition: all .3s ease-in-out; }
+
+input.contact__btn:hover {
+  color: var(--white);
+  background-color: var(--black); }
 
 @media (min-width: 638px) {
   body.index {
