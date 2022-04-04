@@ -1,0 +1,54 @@
+main.contact {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.contact {
+    &__title {
+        font-size: map-get($sizes, "lg");
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1rem;
+        padding-bottom: 2em;
+    }
+}
+
+.form-label {
+    font-family: map-get($fonts, "text");
+    font-size: map-get($sizes, "sm");
+    padding: .6em 0;
+}
+
+.form-check {
+    input {
+        font-size: 2rem;
+    }
+
+    label {
+        font-family: map-get($fonts, "text");
+        font-size: map-get($sizes, "sm");
+    }
+}
+
+.btn {
+    font-size: map-get($sizes, "sm");
+    font-weight: 600;
+    display: block;
+    width: 18em;
+    margin: 0 auto;
+    color: map-get($colores, "white");
+    background-color: map-get($colores, "black");
+    border: 2px solid transparent;
+    border-radius: .3em;
+    padding: .4em 2em;
+    margin-top: 3em;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: map-get($colores, "black");
+        background-color: map-get($colores, "white");
+    }
+}

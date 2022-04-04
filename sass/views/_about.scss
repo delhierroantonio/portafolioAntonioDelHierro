@@ -1,0 +1,53 @@
+main.about {
+    height: 100vh;
+}
+
+.img__container {
+    overflow: hidden;
+}
+
+.about {
+    height: 100%;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-image {
+        margin: 0 auto;
+        max-height: 80vh;
+        aspect-ratio: 1 / 2;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &-title {
+        text-transform: uppercase;
+        font-size: map-get($sizes, "xl");
+        font-weight: 600;
+        font-family: map-get($fonts, "title");
+        letter-spacing: .6rem;
+        color: map-get($colores, "black");
+        padding: .8em 0;
+    }
+
+    &-text {
+        font-family: map-get($fonts, "text");
+        font-size: map-get($sizes, "sm");
+        margin-bottom: 2em;
+        line-height: 2.2;
+        letter-spacing: .2rem;
+    }
+}

@@ -1,7 +1,7 @@
 {
   "name": "portafolio_antoniodelhierro_clase8",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a potfolio of a front end developer which includes all the projects and relevant links to social media of road to dev",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
